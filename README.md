@@ -17,7 +17,7 @@ This repository contains R scripts and the 16S rRNA gene community R object that
 
 This study took place at the Belowground Plot Experiment. From 1986 to 2016, nitrogen was applied every year in the late spring (typically May). Starting in 2017, long-term enrichment was terminated at the subplot scale to study ecosystem recovery. The altered treatments at the subplot scale are referred to as the "Recovering" treatment. We continued applying nitrogen fertilizer at a smaller scale within recovering plots to continue assessing soil microbial community responses to enrichment. This treatment is referred to as "still-fertilized" (or simply "Fertilized" in R scripts).
 
-![Diagram of the Belowground Plot Experiment at Konza Prairie Biological Station.](
+![Diagram of the Belowground Plot Experiment at Konza Prairie Biological Station.](https://github.com/manieland/CommunityRecovery_BGP_KNZ/blob/main/BGPELayout.pdf?raw=true)
 
 Plant community composition data were initially collected every five years. Beginning in 2016, vegetation composition was collected every year. 16S rRNA gene community composition data were collected in June and August for each growing season during the study (2017-2021). 
 
