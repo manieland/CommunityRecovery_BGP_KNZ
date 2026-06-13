@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/1260542898.svg)](https://doi.org/10.5281/zenodo.20683839)
 
 Open research: The data from this study are publically available in the Environmental Data Initiative repository and the National Center for Biotechnology Information. Data can be found in the following links:
 
