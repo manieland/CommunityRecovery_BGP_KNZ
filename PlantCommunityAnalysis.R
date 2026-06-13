@@ -4,7 +4,7 @@
 # DATA INPUT:   BGPVC dataset from EDI, 
 #               PPS01 dataset from EDI
 #
-# OUTPUT:       Plant_NMDS_YearColor_ALL.tiff (Figure 1)
+# OUTPUT:       Plant_NMDS.tiff (Figure 1)
 #               Alpha_PlantRecovery.tiff (Figure 2a-c)
 #               Alpha_PlantRecoveryLineGraph.tiff (Figure S2)
 #               PlantTotalFunctionalTypeCover_Boxplot.tiff (Figure 2d-g)
@@ -486,7 +486,7 @@ Fertshape <- c(21, 22, 24)
 # To recreate figure with exact dimension, highlight all of L489 to L507
 # and then run script.
 
-tiff(file="Plant_NMDS_YearColor_ALL.tiff", width = 4, height = 4, 
+tiff(file="Plant_NMDS.tiff", width = 4, height = 4, 
      pointsize = 1/300, units = 'in', res = 300)
 ggplot(data = nmds_plant[order(nmds_plant$Order),], 
        aes(x = MDS1, y = MDS2, group = TrtCombo, 
@@ -523,7 +523,6 @@ ggplot(data = nmds_plant[order(nmds_plant$Order),],
         panel.background = element_rect(fill = "white", color = "black", 
                                         size = 1),
         legend.title = element_blank())
-
 
 
 ##### Permutational analysis of variation (PERMANOVA) for 2017-2021 #####
@@ -906,7 +905,6 @@ ggplot(df.AlphaGraph.v2, aes(x = RecYear, y = mean.metric, group = Treatment))+
   theme_bw()+
   labs(x = "Year")+
   facet_grid(Metric ~ Fire, scales = "free")+
-  #scale_y_continuous(trans='log10', labels = scales::comma)+
   theme_bw()+
   theme(axis.text.y = element_text(colour="black", size=10),
         axis.text.x = element_text(colour="black", size=10),
